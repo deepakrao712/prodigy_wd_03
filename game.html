@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe 3D</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 3D Spline Background -->
+  <iframe class="bg3d" src="https://my.spline.design/holoblobs-fSH78MTvP9PnRCTRdne6PCYc/" allowfullscreen></iframe>
+
+  <h1>Tic Tac Toe</h1>
+
+  <div class="mode-select">
+    <label><input type="radio" name="mode" value="pvp" checked> Player vs Player</label>
+    <label><input type="radio" name="mode" value="cpu"> Player vs Computer</label>
+  </div>
+
+  <div class="board" id="board"></div>
+  <div class="info" id="info">Player X's Turn</div>
+  <button onclick="resetGame()">Reset Game</button>
+  <script src="script.js"></script>
+
+  
+</body>
+</html>

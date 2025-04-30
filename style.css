@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 40px 20px 100px; /* Add space at the bottom */
+    min-height: 100vh;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+
+  iframe.bg3d {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    border: none;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .mode-select {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .mode-select label {
+    margin-right: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .cell {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cell:hover {
+    background-color: #f0f0f0;
+  }
+
+  .info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #1f4037;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #c8fff7;
+  }
+
+  @media (max-width: 400px) {
+    .board {
+      grid-template-columns: repeat(3, 80px);
+      grid-template-rows: repeat(3, 80px);
+    }
+
+    .cell {
+      font-size: 2rem;
+    }
+  }
